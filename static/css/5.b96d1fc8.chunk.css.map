@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.module.scss"],"names":[],"mappings":"AAAA,yBACE,YAAa,CADf,8CAGI,eAAiB,CACjB,wBAAyB","file":"5.b96d1fc8.chunk.css","sourcesContent":[".container {\n  padding: 20px;\n  .title {\n    font-weight: bold;\n    text-transform: uppercase;\n  }\n}"]}
