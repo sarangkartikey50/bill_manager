@@ -3,7 +3,7 @@
     {
       "id": 1,
       "description": "Dominoes",
-      "category": "FoodNDining",
+      "category": "Food & Dining",
       "amount": 430,
       "date": "01-02-2020"
     },
@@ -19,7 +19,7 @@
       "description": "Amazon",
       "category": "shopping",
       "amount": "2030",
-      "date": "01-07-2020"
+      "date": "02-07-2020"
     },
     {
       "id": 4,
@@ -27,28 +27,78 @@
       "category": "Food & Dining",
 
       "amount": "35900",
-      "date": "01-03-2020"
+      "date": "02-03-2020"
     },
     {
       "id": 5,
       "description": "Tuition",
       "category": "education",
       "amount": "2200",
-      "date": "01-12-2020"
+      "date": "02-12-2020"
     },
     {
       "id": 6,
       "description": "Laundry",
       "category": "Personal Care",
       "amount": "320",
-      "date": "01-14-2020"
+      "date": "03-14-2020"
     },
     {
       "id": 7,
       "description": "Vacation",
       "category": "Travel",
       "amount": "3430",
-      "date": "01-18-2020"
+      "date": "03-18-2020"
+    },
+    {
+      "id": 8,
+      "description": "Dominoes",
+      "category": "Food & Dining",
+      "amount": 430,
+      "date": "03-02-2020"
+    },
+    {
+      "id": 9,
+      "description": "Car wash",
+      "category": "utility",
+      "amount": 500,
+      "date": "04-06-2020"
+    },
+    {
+      "id": 10,
+      "description": "Amazon",
+      "category": "shopping",
+      "amount": "2030",
+      "date": "04-07-2020"
+    },
+    {
+      "id": 11,
+      "description": "House rent",
+      "category": "Food & Dining",
+
+      "amount": "35900",
+      "date": "04-03-2020"
+    },
+    {
+      "id": 12,
+      "description": "Tuition",
+      "category": "education",
+      "amount": "2200",
+      "date": "04-12-2020"
+    },
+    {
+      "id": 13,
+      "description": "Laundry",
+      "category": "Personal Care",
+      "amount": "320",
+      "date": "05-14-2020"
+    },
+    {
+      "id": 14,
+      "description": "Vacation",
+      "category": "Travel",
+      "amount": "3430",
+      "date": "05-18-2020"
     }
   ]
 }

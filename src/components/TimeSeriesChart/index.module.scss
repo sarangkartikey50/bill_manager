@@ -1,0 +1,13 @@
+.container {
+  margin-top: 40px;
+  .header {
+    font-weight: bold;
+  }
+  .wrapper {
+    .chart {
+      margin-top: 40px;
+      height: 600px;
+      width: 100%;
+    }
+  }
+}

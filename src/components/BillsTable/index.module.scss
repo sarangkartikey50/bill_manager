@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  table {
+    width: 100%;
+    thead {
+      th {
+        text-align: center;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          button {
+            margin: 0 8px;
+            text-transform: uppercase;
+            background: unset;
+            border: 1px solid rgb(118, 118, 118);
+          }
+        }
+        &.highlight {
+          background: rgba(green, 0.2);
+        }
+      }
+    }
+  }
+}

@@ -1,1 +1,25 @@
-.container {}
+.container {
+  width: 100%;
+  max-width: calc(100vw - 40px);
+  padding: 0 20px;
+  .billsWrapper {
+    width: 100%;
+  }
+  .footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    .selectCategory {
+      flex: 1;
+      margin-right: 20px;
+    }
+    .addBill {
+      flex: 1;
+      width: 100%;
+      text-transform: uppercase;
+      padding: 8px;
+      background: unset;
+      border: 1px solid rgb(118, 118, 118);
+    }
+  }
+}
