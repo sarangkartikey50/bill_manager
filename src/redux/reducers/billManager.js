@@ -78,8 +78,8 @@ export default function (state = initState, { type, payload }) {
       };
 
     case billManagerTypes.GET_BILLS_SUCCESS: {
-      const billsById = getBillsToBePaidByMonth(payload);
       const timeSeriesChartData = getTimeSeriesChartData(payload);
+      const billsById = getBillsToBePaidByMonth(payload);
       const bills = payload.map((bill) => billsById[bill.id]);
       const categories = getCategories(payload);
       return {
@@ -118,9 +118,16 @@ export default function (state = initState, { type, payload }) {
         }
         return bill;
       });
+      const timeSeriesChartData = getTimeSeriesChartData(bills);
+      billsById = getBillsToBePaidByMonth(bills);
+      bills = bills.map((bill) => billsById[bill.id]);
+      const categories = getCategories(bills);
       return {
         ...state,
         bills,
+        timeSeriesChartData,
+        billsById,
+        categories,
       };
     }
 
