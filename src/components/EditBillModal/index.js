@@ -21,6 +21,8 @@ const EditBillModal = ({ bill, onSaveClick, onCloseClick }) => {
         break;
       case 'date':
         setDate(value);
+        break;
+      default:
     }
   };
 
@@ -72,6 +74,10 @@ const EditBillModal = ({ bill, onSaveClick, onCloseClick }) => {
   );
 };
 
-EditBillModal.propTypes = {};
+EditBillModal.propTypes = {
+  bill: PropTypes.array, 
+  onSaveClick: PropTypes.func, 
+  onCloseClick: PropTypes.func,
+};
 
 export default memo(EditBillModal);

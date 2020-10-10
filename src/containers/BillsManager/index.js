@@ -36,24 +36,24 @@ const BillsManager = () => {
 
   useEffect(() => {
     dispatch(billManagerActions.getBills());
-  }, []);
+  }, [dispatch]);
 
   const handleDeleteBillClick = useCallback(({ id }) => {
     dispatch(billManagerActions.deleteBill(id));
-  }, []);
+  }, [dispatch]);
 
   const handleEditBillClick = useCallback(
     ({ id }) => {
       setEditId(id);
       setShowEditBillModal(true);
     },
-    [editId, showEditBillModal]
+    []
   );
 
   const handleEditModalCloseClik = useCallback(() => {
     setShowEditBillModal(false);
     setEditId(0);
-  }, [showEditBillModal, editId]);
+  }, []);
 
   const handleEditModalSaveClick = useCallback(
     (newBill) => {
@@ -66,7 +66,7 @@ const BillsManager = () => {
       );
       setEditId(0);
     },
-    [showEditBillModal, editId]
+    [dispatch, editId]
   );
 
   const handleAddBillClick = () => {
@@ -77,7 +77,7 @@ const BillsManager = () => {
     ({ category }) => {
       setFilterCategory(category);
     },
-    [filterCategory]
+    []
   );
 
   return (

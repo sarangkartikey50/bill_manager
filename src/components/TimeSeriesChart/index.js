@@ -22,7 +22,7 @@ const CustomizedLabel = ({ x, y, stroke, value }) => {
 };
 
 const CustomizedDot = (props) => {
-  const { cx, cy, stroke, payload, value } = props;
+  const { cx, cy, value } = props;
 
   if (value <= MONTHLY_BUDGET) {
     return (
@@ -78,7 +78,7 @@ const TimeSeriesChart = ({ data }) => {
     if (containerRef.current) {
       setContainerWidth(containerRef.current.offsetWidth);
     }
-  }, [containerRef.current]);
+  }, []);
 
   return (
     <div ref={containerRef} className={styles.container}>
